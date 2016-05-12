@@ -15,10 +15,10 @@ ansible's version is 1.9.4 or 2.0.0.1
     * yumで取得するopenjdkの名前
 * yum_repository_path
     * yumのrepositoryを管理しているpath
-* jenkins_repository
-    * jenkins repositoryのURL
 * jenkins_key
     * jenkins repository用の鍵があるURL
+* jekins_package_url
+    * jenkins rpm packageのURL
 * jenkins_host_name(default "localhost")
     * jenkinsのホストネーム
 * jenkins_port (default "8080")

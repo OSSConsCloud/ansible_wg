@@ -6,12 +6,6 @@
     - jenkins
     - deploy
 
-- name: Get jenkins repository
-  get_url: url={{ jenkins_repojitory }} dest={{ yum_repojitory_path }}
-  tags:
-    - jenkins
-    - deploy
-
 - name: Import jenkins key
   rpm_key: state=present key={{ jenkins_key }}
   tags:
@@ -19,7 +13,8 @@
     - deploy
 
 - name: Install jenkins
-  yum: name=jenkins state=latest update_cache=yes
+  yum: name={{ jekins_package_url }} state=present
+  ignore_errors: yes
   tags:
     - jenkins
     - deploy

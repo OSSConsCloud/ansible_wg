@@ -3,8 +3,8 @@ openjdk_items:
   - java-1.7.0-openjdk
   - java-1.7.0-openjdk-devel
 yum_repojitory_path: /etc/yum.repos.d
-jenkins_repojitory: http://pkg.jenkins-ci.org/redhat/jenkins.repo
 jenkins_key: http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+jekins_package_url: http://pkg.jenkins-ci.org/redhat/jenkins-1.658-1.1.noarch.rpm
 jenkins_host_name: localhost
 jenkins_port: 8080
 jenkins_updates_json_path: /var/lib/jenkins/updates/default.json
